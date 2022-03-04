@@ -10,7 +10,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 var path = require('path');
 var Prerenderer = require('@prerenderer/prerenderer');
-var PuppeteerRenderer = require('@prerenderer/renderer-puppeteer');
+var PuppeteerRenderer = require('@kaokei/renderer-puppeteer');
 
 var _require = require('html-minifier'),
     minify = _require.minify;

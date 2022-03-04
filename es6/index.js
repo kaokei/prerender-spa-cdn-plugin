@@ -1,6 +1,6 @@
 const path = require('path')
 const Prerenderer = require('@prerenderer/prerenderer')
-const PuppeteerRenderer = require('@prerenderer/renderer-puppeteer')
+const PuppeteerRenderer = require('@kaokei/renderer-puppeteer')
 const { minify } = require('html-minifier')
 const PortFinder = require('portfinder')
 // const httpProxy = require('http-proxy')
