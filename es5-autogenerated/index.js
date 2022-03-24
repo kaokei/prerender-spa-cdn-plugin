@@ -296,6 +296,9 @@ PrerenderSPACdnPlugin.prototype.apply = function (compiler) {
   if (compiler.hooks) {
     var plugin = { name: 'PrerenderSPACdnPlugin' };
     compiler.hooks.afterEmit.tapAsync(plugin, afterEmit);
+    if (this._options.afterPrerender) {
+      compiler.hooks.done.tap(plugin, this._options.afterPrerender);
+    }
   } else {
     compiler.plugin('after-emit', afterEmit);
   }
